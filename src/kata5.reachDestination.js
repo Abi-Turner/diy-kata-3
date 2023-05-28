@@ -1,9 +1,8 @@
 const reachDestination = (distance, speed) => {
-  const totalTime = distance / speed;
+  const time = distance / speed;
+  const roundedTime = Math.ceil(time * 2) / 2;
 
-  const timeRounded = (totalTime) => { Math.round(totalTime * 2) / 2;}
-
-  return `I should be there in ${totalTime} hours`;
+  return `I should be there in ${roundedTime} hours`;
 };
 
 module.exports = reachDestination;

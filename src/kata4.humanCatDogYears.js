@@ -1,6 +1,7 @@
 const humanCatDogYears = (number) => {
-  let catYears = (number - 2) * 4 + 24;
-  let dogYears = (number - 2) * 5 + 24;
+  const catYears = (number - 2) * 4 + 24;
+  const dogYears = (number - 2) * 5 + 24;
+
   if (number === 1) {
     return [1, 15, 15];
   }
